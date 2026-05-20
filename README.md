@@ -165,3 +165,52 @@ You can also use the bundled `data/` folder locally without S3.
 | Image path errors in UI | Run the app from the project root so `data/images/...` resolves |
 | Wrong Streamlit command | Use `streamlit run app.py` (not `llm_app.py`) |
 
+---
+
+## Useful links
+
+### Python & dependencies
+
+- [Python downloads](https://www.python.org/downloads/) — install Python 3.10+ (recommended for this project)
+- [venv documentation](https://docs.python.org/3/library/venv.html) — create and activate virtual environments
+- [pip user guide](https://pip.pypa.io/en/stable/user_guide/) — install packages from `requirements.txt`
+
+### AWS setup
+
+- [AWS Management Console](https://aws.amazon.com/console/) — sign in and manage services
+- [AWS CLI installation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) — install the CLI on your machine
+- [AWS CLI configuration (`aws configure`)](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) — set access keys and default region
+- [IAM: create access keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) — generate credentials for CLI/SDK
+- [IAM users console](https://console.aws.amazon.com/iam/home#/users) — manage users and security credentials
+
+### Amazon Bedrock (required for this project)
+
+- [Amazon Bedrock user guide](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) — overview and concepts
+- [Request model access](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html) — enable Claude and Titan in your account
+- [Bedrock model access console](https://console.aws.amazon.com/bedrock/home#/modelaccess) — manage which models you can use
+- [Bedrock Runtime API](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Amazon_Bedrock_Runtime.html) — invoke models from code (`boto3`)
+- [Anthropic Claude models on Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-anthropic-claude-messages.html) — Claude 3 Sonnet parameters
+- [Amazon Titan Text Embeddings](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html) — Titan Embed Text v2
+
+### Amazon S3 (optional, for the notebook)
+
+- [Amazon S3 console](https://s3.console.aws.amazon.com/) — create buckets and upload data
+- [Getting started with S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html) — buckets, objects, and permissions
+- [Boto3 S3 client reference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html) — read/write objects from Python
+
+### Frameworks & libraries used in this repo
+
+- [Streamlit docs](https://docs.streamlit.io/) — build and run the chat UI
+- [Streamlit: `streamlit run`](https://docs.streamlit.io/develop/concepts/architecture/run-your-app) — run `app.py` locally
+- [LangChain documentation](https://python.langchain.com/docs/introduction/) — chains, prompts, and Bedrock integrations
+- [LangChain AWS / Bedrock](https://python.langchain.com/docs/integrations/platforms/aws/) — Bedrock chat and embeddings
+- [FAISS (GitHub)](https://github.com/facebookresearch/faiss) — vector similarity search
+- [LangChain FAISS integration](https://python.langchain.com/docs/integrations/vectorstores/faiss/) — save/load local indexes
+- [Boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) — AWS SDK for Python
+
+### Deployment (optional)
+
+- [Amazon EC2 documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html) — launch and connect to instances
+- [Streamlit Community Cloud](https://docs.streamlit.io/deploy/streamlit-community-cloud) — deploy without managing servers (requires AWS keys in secrets)
+- [Security groups for EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html) — open port **8501** for Streamlit
+
