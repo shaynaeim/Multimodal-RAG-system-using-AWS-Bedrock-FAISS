@@ -1,5 +1,7 @@
 # Multimodal RAG System using AWS Bedrock and FAISS
 
+![Multimodal RAG system architecture — data ingestion, vector store, and Streamlit recommendation flow](reference-images/notebook/architecture.png)
+
 A **Multimodal Retrieval-Augmented Generation (RAG)** food recommendation assistant for a restaurant-aggregator use case. Users can search by text, upload a dish photo, or combine both; the system retrieves similar menu items from a FAISS vector index and uses **Amazon Bedrock** (Claude Sonnet + Titan embeddings) to rank, summarize, and recommend dishes.
 
 ## What this project does
@@ -29,8 +31,6 @@ Typical flows:
 | Runtime | Python **3.10.x** recommended |
 
 ## Solution architecture
-
-![Multimodal RAG system architecture — data ingestion, vector store, and Streamlit recommendation flow](reference-images/notebook/architecture.png)
 
 ### Data ingestion and indexing (offline)
 
