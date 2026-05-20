@@ -167,6 +167,3 @@ See [ProjectPro EC2 deployment guide](https://www.projectpro.io/project-use-case
 | Image path errors in UI | Run the app from the project root so `data/images/...` resolves |
 | Wrong Streamlit command | Use `streamlit run app.py` (not `llm_app.py`) |
 
-## License
-
-Educational / portfolio use. Verify AWS Bedrock and Anthropic terms for your deployment.
