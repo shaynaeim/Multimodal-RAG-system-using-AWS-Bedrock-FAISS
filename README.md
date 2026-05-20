@@ -154,8 +154,6 @@ You can also use the bundled `data/` folder locally without S3.
 3. `pip3 install -r requirements.txt`
 4. `streamlit run app.py` (or `nohup streamlit run app.py` for a long-running process).
 
-See [ProjectPro EC2 deployment guide](https://www.projectpro.io/project-use-case/build-and-deploy-an-end-to-end-machine-learning-pipeline-for-a-classification-model) for general EC2/Streamlit patterns.
-
 ---
 
 ## Troubleshooting
